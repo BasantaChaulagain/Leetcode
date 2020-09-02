@@ -43,7 +43,26 @@ class Solution:
         
         print(head, dummy.next)
         return dummy.next
+    
+'''One pass'''    
+# class Solution:
+#     def removeNthFromEnd(self, head, n):
+#         dummy=ListNode(0)
+#         dummy.next=head
+#         first=dummy.next
+#         second=dummy
         
+#         for i in range(n):
+#             first=first.next
+        
+#         while(first!=None):
+#             first=first.next
+#             second=second.next
+        
+#         second.next=second.next.next
+#         return dummy.next
+
+
 # def main():
 # 	lnode=LinkedList([1,2,3])
 # 	print(lnode)
